@@ -11,7 +11,7 @@ public class Produto {
     public Long id;
     public String nome;
     public String descricao;
-    public BigDecimal decimal;
+    public BigDecimal preco;
 
     public Long getId() {
         return id;
@@ -37,11 +37,11 @@ public class Produto {
         this.descricao = descricao;
     }
 
-    public BigDecimal getDecimal() {
-        return decimal;
+    public BigDecimal getPreco() {
+        return preco;
     }
 
-    public void setDecimal(BigDecimal decimal) {
-        this.decimal = decimal;
+    public void setPreco(BigDecimal preco) {
+        this.preco = preco;
     }
 }
