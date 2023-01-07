@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f174925b-2c50-484e-8645-f68bea80a682" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/dao/ProdutoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/util/JPAUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/domain/Categoria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/domain/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/domain/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/teste/CadastroDeProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/teste/CadastroDeProduto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -53,6 +54,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.github.lucasefdr.domain" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.CadastroDeProduto">
     <configuration name="CadastroDeProduto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.lucasefdr.teste.CadastroDeProduto" />
@@ -96,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672794741999</updated>
       <workItem from="1672957696807" duration="6731000" />
-      <workItem from="1673092203230" duration="2759000" />
+      <workItem from="1673092203230" duration="4711000" />
     </task>
     <servers />
   </component>
