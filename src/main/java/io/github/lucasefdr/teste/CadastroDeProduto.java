@@ -1,5 +1,6 @@
 package io.github.lucasefdr.teste;
 
+import io.github.lucasefdr.dao.CategoriaDAO;
 import io.github.lucasefdr.dao.ProdutoDAO;
 import io.github.lucasefdr.domain.Categoria;
 import io.github.lucasefdr.domain.Produto;
@@ -10,12 +11,17 @@ import java.math.BigDecimal;
 
 public class CadastroDeProduto {
     public static void main(String[] args) {
-        Produto celular = new Produto("iPhone", "11", new BigDecimal("3474.00"), Categoria.CELULARES);
+        Categoria celulares = new Categoria("CELULARES");
+
+
+        Produto celular = new Produto("iPhone", "11", new BigDecimal("3474.00"), celulares);
 
         EntityManager entityManager = JPAUtil.getEntityManager();
+        CategoriaDAO categoriaDAO = new CategoriaDAO(entityManager);
         ProdutoDAO produtoDAO = new ProdutoDAO(entityManager);
 
         entityManager.getTransaction().begin();
+        categoriaDAO.salvar(celulares);
         produtoDAO.salvar(celular);
         entityManager.getTransaction().commit();
         entityManager.close();
