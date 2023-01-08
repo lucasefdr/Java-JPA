@@ -23,7 +23,14 @@ public class CadastroDeProduto {
         entityManager.getTransaction().begin();
         categoriaDAO.salvar(celulares);
         produtoDAO.salvar(celular);
-        entityManager.getTransaction().commit();
+
+        entityManager.flush();
+        entityManager.clear();
+
+        celular = entityManager.merge(celular);
+        celular.setPreco(new BigDecimal("3200.00"));
+
+        entityManager.flush();
         entityManager.close();
     }
 }

@@ -19,6 +19,10 @@ public class Produto {
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
 
+    public Produto() {
+
+    }
+
     public Produto(String nome, String descricao, BigDecimal preco, Categoria categoria) {
         this.nome = nome;
         this.descricao = descricao;
