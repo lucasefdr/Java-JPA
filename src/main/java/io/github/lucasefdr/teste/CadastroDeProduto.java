@@ -8,11 +8,31 @@ import io.github.lucasefdr.util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
+import java.util.List;
 
 public class CadastroDeProduto {
     public static void main(String[] args) {
-        Categoria celulares = new Categoria("CELULARES");
+        cadastrarProduto();
 
+        EntityManager entityManager = JPAUtil.getEntityManager();
+        ProdutoDAO produtoDAO = new ProdutoDAO(entityManager);
+
+        Produto produto = produtoDAO.buscarPorId(1L);
+
+        System.out.println(produto.getNome());
+        System.out.println(produto.getDescricao());
+        System.out.println(produto.getPreco());
+
+        System.out.println();
+
+        System.out.println("Retornando todos os produtos: ");
+        List<Produto> produtos = produtoDAO.buscarTodos();
+
+        produtos.forEach((p) -> System.out.println(p.getNome()));
+    }
+
+    public static void cadastrarProduto() {
+        Categoria celulares = new Categoria("CELULARES");
 
         Produto celular = new Produto("iPhone", "11", new BigDecimal("3474.00"), celulares);
 
@@ -30,7 +50,7 @@ public class CadastroDeProduto {
         celular = entityManager.merge(celular);
         celular.setPreco(new BigDecimal("3200.00"));
 
-        entityManager.flush();
+        entityManager.getTransaction().commit();
         entityManager.close();
     }
 }

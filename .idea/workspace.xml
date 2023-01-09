@@ -7,8 +7,6 @@
     <list default="true" id="f174925b-2c50-484e-8645-f68bea80a682" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/dao/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/dao/ProdutoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/domain/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/domain/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/domain/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/domain/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/teste/CadastroDeProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/lucasefdr/teste/CadastroDeProduto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +102,8 @@
       <updated>1672794741999</updated>
       <workItem from="1672957696807" duration="6731000" />
       <workItem from="1673092203230" duration="6536000" />
-      <workItem from="1673209982733" duration="1264000" />
+      <workItem from="1673209982733" duration="1992000" />
+      <workItem from="1673221475888" duration="1313000" />
     </task>
     <servers />
   </component>
