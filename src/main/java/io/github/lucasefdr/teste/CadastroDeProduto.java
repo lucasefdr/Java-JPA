@@ -29,6 +29,21 @@ public class CadastroDeProduto {
         List<Produto> produtos = produtoDAO.buscarTodos();
 
         produtos.forEach((p) -> System.out.println(p.getNome()));
+
+        System.out.println("Retornando produtos passando parâmetro: ");
+        List<Produto> iphones = produtoDAO.buscarPorNome("iPhone");
+
+        iphones.forEach((p) -> System.out.println(p.getNome()));
+
+        System.out.println("Retornando produtos por categoria: ");
+        List<Produto> celulares = produtoDAO.buscarPorCategoria("CELULARES");
+
+        celulares.forEach((p) -> System.out.println(p.getNome()));
+
+        System.out.println("Retornando preco de um produto: ");
+        BigDecimal precoIPhone11 = produtoDAO.buscarPreco("iPhone", "11");
+
+        System.out.println("Preço iPhone 11: R$ " + precoIPhone11);
     }
 
     public static void cadastrarProduto() {
